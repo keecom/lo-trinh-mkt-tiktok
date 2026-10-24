@@ -467,16 +467,15 @@ const SECTIONS=[
   <span class="eyebrow">Tổng quan</span>
   <h1 class="title">Hệ thống Thăng tiến<br>Bộ phận Marketing TikTok</h1>
   <p class="lead">Khung phát triển sự nghiệp minh bạch cho đội ngũ Marketing TikTok tại KEECOM — từ TTS đến Leader, với tiêu chí cụ thể và khung năng lực 4 cấp độ.<br>Kết quả xét duyệt = <b>50% điều kiện số liệu + 50% quản lý xét duyệt</b>, xét đánh giá <b>vào cuối mỗi quý</b>.</p>
-  <div class="note" style="border-left:4px solid var(--amber);margin-bottom:16px"><b>⚠️ Lưu ý:</b> số liệu các chặng Nhân viên → Chuyên viên và Thử thách Lead đang <b>mượn từ MKT Facebook</b>. Vui lòng chỉnh theo đặc thù TikTok trước khi áp dụng chính thức.</div>
   <div class="stats">
-    <div class="stat"><div class="num">5</div><div class="lb">Vị trí</div><div class="sub">trong hệ thống MKT</div></div>
+    <div class="stat"><div class="num">6</div><div class="lb">Vị trí</div><div class="sub">trong hệ thống MKT TikTok</div></div>
     <div class="stat"><div class="num">11</div><div class="lb">Năng lực</div><div class="sub">được đánh giá (Leader)</div></div>
     <div class="stat"><div class="num">4</div><div class="lb">Cấp độ</div><div class="sub">mỗi năng lực</div></div>
     <div class="stat"><div class="num">Mỗi quý</div><div class="lb">Chu kỳ</div><div class="sub">xét thăng tiến</div></div>
   </div>
   <div class="block-h"><span class="pill">Lộ trình thăng tiến chính thức</span></div>
   <div class="ladder">
-    <div class="rung r0"><div class="tag">Thử việc</div><div class="nm">2 tháng</div><div class="pay">85% lương cơ bản</div></div>
+    <div class="rung r0"><div class="tag">Thực tập sinh · 6 tháng</div><div class="nm">TTS MKT TikTok</div><div class="pay">5.000.000đ</div></div>
     <div class="rung r1"><div class="tag">Cấp 1</div><div class="nm">Nhân viên</div><div class="pay">7.000.000đ</div></div>
     <div class="rung r2"><div class="tag">Cấp 2</div><div class="nm">Chuyên viên</div><div class="pay">10.000.000đ</div></div>
     <div class="rung r3"><div class="tag">Chặng đệm · 6 tháng</div><div class="nm">Thử thách Lead</div><div class="pay">Giữ lương CV (10tr) + thưởng</div></div>
@@ -494,6 +493,7 @@ const SECTIONS=[
 
 {id:'vitri',group:'TỔNG QUAN',icon:'▤',label:'Các vị trí MKT',render:()=>{
   const rows=[
+   ['Thực tập sinh MKT TikTok','Học việc · 6 tháng','Lương 5tr. Làm quen công việc Marketing TikTok: lên video, chạy phiên live, xử lý đơn, học hệ thống. Đạt doanh số ≥ 200tr/tháng để lên chính thức.','100% học việc','b-gray','#8b94a3'],
    ['Nhân viên MKT','Thực thi','Làm các đầu việc được giao: Content, thiết kế, chạy ads, trade marketing.','100% thực thi','b-green','var(--green)'],
    ['Chuyên viên MKT','Thực thi nâng cao','Content, thiết kế, chạy ads, trade marketing với chất lượng & sản lượng cao hơn.','100% thực thi (chất lượng cao)','b-blue','var(--blue)'],
    ['Trưởng nhóm MKT — Leader','Vừa quản lý vừa thực thi','Quản lý nhóm Content / Ads / Design / SEO; phân việc; lập plan; đào tạo; giám sát; vẫn trực tiếp làm như chuyên viên.','20% quản lý · 80% chuyên môn','b-purple','var(--purple)'],
@@ -501,7 +501,7 @@ const SECTIONS=[
    ['Giám đốc MKT — CMO','Chiến lược marketing','Nghiên cứu thị trường; xây chiến lược STP; tìm kiếm & mở rộng đại dương mới.','100% chiến lược','b-red','var(--red)']
   ];
   return `<span class="eyebrow">Tổng quan</span><h1 class="title">Các vị trí MKT</h1>
-  <p class="lead">5 vị trí trong hệ thống, từ thực thi đến chiến lược. Tỷ trọng quản lý tăng dần theo cấp bậc.</p>
+  <p class="lead">6 vị trí trong hệ thống, từ Thực tập sinh đến chiến lược. Tỷ trọng quản lý tăng dần theo cấp bậc.</p>
   <div class="career">${rows.map((r,i)=>`<div class="pcard" style="border-top-color:${r[5]}">
     <div class="pnum" style="background:${r[5]}">${i+1}</div>
     <h4>${r[0]}</h4><div class="role">${r[1]}</div>
@@ -606,7 +606,7 @@ const SECTIONS=[
 
 {id:'lotrinh',group:'LỘ TRÌNH',icon:'▶',label:'Lộ trình 12 tháng tham khảo',render:()=>`
   <span class="eyebrow">Lộ trình</span><h1 class="title">Lộ trình 12 tháng tham khảo</h1>
-  <p class="lead">Hành trình tham khảo từ thử việc đến Chuyên viên và hướng lên Leader. Thực tế có thể nhanh hơn hoặc chậm hơn tuỳ năng lực.</p>
+  <p class="lead">Hành trình tham khảo từ Thực tập sinh đến Chuyên viên và hướng lên Leader. Thực tế có thể nhanh hơn hoặc chậm hơn tuỳ năng lực.</p>
   <div class="phase"><span class="lbl" style="background:var(--blue)">Giai đoạn 1 — Nền tảng (Tháng 1–2)</span>
     <div class="tl">
       <div class="col"><div class="t">Tuần 1–2</div><div class="s">Onboarding</div><ul><li>Học hệ thống ads đang chạy</li><li>Shadow người hướng dẫn</li><li>Nắm sản phẩm & KH mục tiêu</li></ul></div>
