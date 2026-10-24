@@ -643,26 +643,26 @@ const SECTIONS=[
 
 {id:'hoa-hong',group:'LỘ TRÌNH',icon:'₫',label:'Bảng hoa hồng TikTok',render:()=>{
   const rows=[
-    ['dưới 200tr','0,00%','0,00%'],
-    ['200.000.000','0,40%','0,50%'],
-    ['500.000.000','0,60%','0,70%'],
-    ['800.000.000','0,80%','0,90%'],
-    ['1.000.000.000','1,00%','1,00%'],
-    ['1.200.000.000','1,10%','1,10%'],
-    ['1.500.000.000','1,20%','1,20%'],
-    ['1.800.000.000','1,35%','1,35%'],
-    ['2.000.000.000','1,50%','1,50%'],
-    ['3.000.000.000','1,70%','1,70%'],
-    ['trên 3 tỷ','1,80%','1,80%']
+    ['dưới 200.000.000','0,00%','0'],
+    ['200.000.000','0,60%','1.200.000'],
+    ['500.000.000','0,70%','3.500.000'],
+    ['800.000.000','0,80%','6.400.000'],
+    ['1.000.000.000','1,00%','10.000.000'],
+    ['1.200.000.000','1,10%','13.200.000'],
+    ['1.500.000.000','1,20%','18.000.000'],
+    ['1.800.000.000','1,35%','24.300.000'],
+    ['2.000.000.000','1,50%','30.000.000'],
+    ['3.000.000.000','1,70%','51.000.000'],
+    ['trên 3.000.000.000','1,80%','—']
   ];
   return `<span class="eyebrow">Lộ trình</span><h1 class="title">Bảng hoa hồng TikTok</h1>
   <p class="lead">Hoa hồng tính theo <b>doanh số thực tế hàng tháng</b> từ kênh nhân sự Marketing TikTok phụ trách, áp dụng cho tất cả sản phẩm.<br><b>Dưới 200 triệu/tháng</b> → không áp dụng hoa hồng. Hoa hồng chi trả theo tháng cùng kỳ lương.</p>
-  <div class="block-h"><span class="pill">Bảng hoa hồng — áp dụng cho tất cả sản phẩm</span></div>
-  <div class="tbl-wrap"><table class="jt"><thead><tr><th>Doanh số / tháng</th><th>% DS TikTok</th><th>% DS điều chỉnh</th></tr></thead><tbody>
-    ${rows.map(r=>`<tr><td class="desc" style="text-align:right">${r[0]}</td><td style="text-align:center;font-weight:600">${r[1]}</td><td style="text-align:center;font-weight:600;color:var(--amber)">${r[2]}</td></tr>`).join('')}
+  <div class="block-h"><span class="pill">Bảng doanh số MKT — áp dụng cho tất cả các sản phẩm</span></div>
+  <div class="tbl-wrap"><table class="jt"><thead><tr><th>Doanh số / tháng</th><th>% DS TikTok</th><th>Thành tiền<br>(Thưởng doanh số hàng tháng)</th></tr></thead><tbody>
+    ${rows.map(r=>`<tr><td class="desc" style="text-align:right">${r[0]}</td><td style="text-align:center;font-weight:600">${r[1]}</td><td style="text-align:right;font-weight:700;color:var(--blue-d,#1a52c7)">${r[2]}</td></tr>`).join('')}
   </tbody></table></div>
   <div class="note" style="margin-top:16px;border-left:4px solid var(--blue)"><b>Ví dụ:</b> doanh số tháng đạt <b>1 tỷ</b> → hoa hồng = 1.000.000.000 × <b>1,00%</b> = <b>10.000.000 đ</b>.</div>
-  <div class="note" style="margin-top:10px;border-left:4px solid var(--amber)"><b>Nguyên tắc áp dụng:</b> doanh số tính là doanh số thực tế, hợp lệ, đã ghi nhận trên hệ thống. Dưới 200tr không áp dụng hoa hồng. Cột <b>% DS điều chỉnh</b> áp dụng cho các trường hợp đặc biệt (chi tiết theo thông báo HCNS).</div>
+  <div class="note" style="margin-top:10px;border-left:4px solid var(--amber)"><b>Nguyên tắc áp dụng:</b> doanh số tính là doanh số thực tế, hợp lệ, đã ghi nhận trên hệ thống. Dưới 200tr không áp dụng hoa hồng.</div>
   <div class="note" style="margin-top:10px"><b>Hiệu lực:</b> Số 10/TB/2026, từ <b>01/10/2026 đến 31/12/2026</b>. Sau thời gian này cơ chế có thể được điều chỉnh — Công ty sẽ thông báo trước <b>1 tháng</b> kể từ ngày ra cơ chế mới.</div>`}},
 
 {id:'knl-nv',group:'KHUNG NĂNG LỰC',icon:'▦',label:'Năng lực Nhân viên MKT',render:()=>`
